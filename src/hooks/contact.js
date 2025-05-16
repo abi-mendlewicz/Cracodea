@@ -11,8 +11,6 @@ export const useContactForm = () => {
   const [addMessageResponse, setAddMessageResponse] = useState(null)
 
   useEffect(() => {
-    console.log(newMessage)
-
     if (newMessage) {
       setIsSending(true)
       addMessage(newMessage).then(() => {
@@ -45,7 +43,6 @@ export const useContactForm = () => {
     e.preventDefault()
 
     if (isValidName() && isValidEmail() && isValidMessage()) {
-      console.log('Seting new message...')
       setNewMessage({
         name,
         email,

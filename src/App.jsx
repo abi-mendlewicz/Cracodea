@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import NoMatch from './components/NoMatch'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/portfolio' element={<Portfolio />} />
           <Route path='/portfolio/:id' element={<Portfolio />} />
           <Route path='/contacto' element={<Contact />} />
+          <Route path='/petlove/politica-de-privacidad' element={<PrivacyPolicy />} />
           <Route path='*' element={<NoMatch />} />
         </Route>
       </Routes>

@@ -9,7 +9,7 @@ export default function Contact() {
   const [name, setName, isValidName] = formData.nameInput
   const [email, setEmail, isValidEmail] = formData.emailInput
   const [message, setMessage, isValidMessage] = formData.messageInput
-console.log('disabled', formWasValidated && isValidName() && isValidEmail() && isValidMessage())
+
   return (
     <section className='px-6 basis-full md:basis-4/5'>
       <form
@@ -20,7 +20,6 @@ console.log('disabled', formWasValidated && isValidName() && isValidEmail() && i
           className='block p-2 w-full border-b focus:outline-hidden focus:bg-blue-50'
           type='text'
           value={name}
-          defaultValue={name}
           placeholder='Nombre'
           onChange={e => setName(e.target.value)}
           aria-label='Nombre'
@@ -32,7 +31,6 @@ console.log('disabled', formWasValidated && isValidName() && isValidEmail() && i
           className='block mt-8 p-2 w-full border-b focus:outline-hidden focus:bg-blue-50'
           type='email'
           value={email}
-          defaultValue={email}
           placeholder='Correo electrónico'
           onChange={e => setEmail(e.target.value)}
           aria-label='Correo electrónico'
