@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
   return (
-    <div className='px-6 basis-full md:basis-4/5 text-blue-900'>
+    <div className='px-6 basis-full md:basis-4/5 font-[Montserrat] text-blue-800'>
       <header>
         <h1 className='mb-6 text-2xl'>Política de Privacidad y Permisos de PetLoveTest</h1>
       </header>
