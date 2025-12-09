@@ -1,4 +1,4 @@
-export default function PrivacyPolicy() {
+export default function PetlovePrivacyPolicy() {
   return (
     <div className='px-6 basis-full md:basis-4/5 font-[Montserrat] text-blue-800'>
       <header>
